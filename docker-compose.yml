@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  ml-node:
+    image: fastapi-rest:latest
+    container_name: fastapi-rest-v1
+
+    # port mapping host:container
+    ports:
+      - "8080:80"
+    env_file:
+      - cfg.env
