@@ -6,7 +6,9 @@ This repo contains the skeleton code for implementation of REST Api using fast a
 
 The setting `FastApi + Ubuntu + Conda + Docker` seems to be used frequently enough to have a template for it.
 
-I have also seen some other people describing this setting. But, it seems that they are using miniconda image rather Ubuntu image. Here, I want to have the flexibility of choosing ubuntu image myself
+I have also seen some other people describing this setting. But, it seems that they are using miniconda image rather Ubuntu image. Here, I want to have the flexibility of choosing ubuntu image myself.
+
+If you want to use Ubuntu as a base image, there is also a problem due `sh` being default shell, this template resolves this by calling necessary conda commands to activate the environment properly.
 
 ## Installation
 
